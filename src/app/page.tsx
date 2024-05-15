@@ -53,7 +53,7 @@ const IndexPage = () => {
             alt="heart"
             width={350}
             height={350}
-            className="rounded-md "
+            className={`rounded-md ${isHeartVisible}`}
             onClick={handleOpenImageOnFullScreen}
           />
           <div id="heart" className={`text-center ${isHeartVisible}`} />
