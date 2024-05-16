@@ -46,16 +46,23 @@ const IndexPage = () => {
   return (
     <div className="bg-red-100 min-h-screen flex items-center justify-center">
       <audio autoPlay onCanPlay={playAudio} src="/Partilhar.mp3" />
-      <div className="container max-w-6xl bg-white shadow-md rounded-sm shadow-red-600">
-        <div className="text-center justify-center items-center mx-auto mt-4 p-4 flex flex-row">
-          <Image
-            src="/thiagoebia.jpg"
-            alt="heart"
-            width={350}
-            height={350}
-            className={`rounded-md ${isHeartVisible}`}
-            onClick={handleOpenImageOnFullScreen}
-          />
+      <div className="container m-4 lg:max-w-6xl bg-white shadow-md rounded-sm shadow-red-600">
+        <div className="text-center justify-center items-center mx-auto mt-4 p-4 flex flex-col lg:flex-row">
+          <div className="flex flex-col justify-center items-center">
+            <h2
+              className={`text-2xl text-center text-red-600 font-bold mt-2 ${isHeartVisible}`}
+            >
+              12 meses com você! ❤️
+            </h2>
+            <Image
+              src="/thiagoebia.jpg"
+              alt="heart"
+              width={350}
+              height={350}
+              className={`rounded-md ${isHeartVisible}`}
+              onClick={handleOpenImageOnFullScreen}
+            />
+          </div>
           <div id="heart" className={`text-center ${isHeartVisible}`} />
         </div>
 
